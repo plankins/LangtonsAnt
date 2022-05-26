@@ -70,9 +70,9 @@ public class Game {
         switch (val) {
             //by changing this, one can change the pattern the ant produces.
             case 0 -> ant.turnRight();
-            case 1 -> ant.turnRight();
-            case 2 -> ant.turnLeft();
-            case 3 -> ant.turnRight();
+            case 1 -> ant.turnLeft();
+            case 2 -> ant.turnRight();
+            case 3 -> ant.turnLeft();
         }
 
         ant.moveForward();
@@ -97,10 +97,8 @@ public class Game {
                 System.out.println(loop.stepDelay);
                 switch (a) {
                     case WHEEL_DOWN -> {
-                        game.GRID_SIZE -= increment;
                     }
                     case WHEEL_UP -> {
-                        game.GRID_SIZE += increment;
                     }
                 }
 

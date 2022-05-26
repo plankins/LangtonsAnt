@@ -15,6 +15,7 @@ public class GamePanel extends JPanel {
         this.board = game.getBoard();
         this.setBackground(Color.WHITE);
         this.setFocusable(true);
+
         this.setPreferredSize(new Dimension(game.WINDOW_SIZE, game.WINDOW_SIZE));
 
     }

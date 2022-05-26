@@ -31,13 +31,10 @@ public class Board {
 
     public void updateTile(Point2 p) {
         int var = getOnBoard(p);
-        int newVar = switch (var) {
-            case 0 -> 1;
-            case 1 -> 2;
-            case 2 -> 3;
-            case 3 -> 0;
-            default -> throw new IllegalStateException("Unexpected value: " + var);
-        };
+        int newVar = var+1;
+        if(newVar > 3){
+            newVar = 0;
+        }
         setOnBoard(p, newVar);
     }
 
